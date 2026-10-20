@@ -16,7 +16,7 @@ A fast, static portfolio and resume website built with clean semantic HTML, vani
   - Core Competencies & Skills (Product Strategy, 0-to-1, PRDs, SQL, etc.)
   - Work Experience (Head of Product at Miles Wealth)
   - Selected Projects (Salary SIP & Vertex Investment Intelligence)
-  - Education & Honors (VIT Bhopal, GVSDP Scholar, Higher Secondary)
+  - Education (VIT Bhopal, GVSDP Scholar, Higher Secondary)
   - Research Experience (Cybersecurity Threats Against Seniors)
 - **Search Engine & Social Previews (SEO):** Full OpenGraph, Twitter Cards, and Schema.org `Person` JSON-LD structured data.
 
