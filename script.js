@@ -101,6 +101,53 @@
     });
   }
 
+  // --- Navigation & Active Page Highlighter ---
+  function initNavigation() {
+    const isFile = window.location.protocol === 'file:';
+    const path = window.location.pathname.toLowerCase();
+
+    // Map clean URLs when running directly in local file system
+    if (isFile) {
+      const internalLinks = document.querySelectorAll('a[href^="/"]');
+      internalLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href === '/') {
+          link.setAttribute('href', 'index.html');
+        } else if (href === '/work') {
+          link.setAttribute('href', 'work.html');
+        } else if (href === '/projects') {
+          link.setAttribute('href', 'projects.html');
+        } else if (href === '/resume') {
+          link.setAttribute('href', 'resume.html');
+        }
+      });
+    }
+
+    // Determine current active page
+    let activeKey = 'home';
+    if (path.includes('work')) {
+      activeKey = 'work';
+    } else if (path.includes('project')) {
+      activeKey = 'projects';
+    } else if (path.includes('resume')) {
+      activeKey = 'resume';
+    } else if (path.endsWith('/') || path.endsWith('index.html') || path === '') {
+      activeKey = 'home';
+    }
+
+    const navLinks = document.querySelectorAll('[data-nav]');
+    navLinks.forEach((link) => {
+      const key = link.getAttribute('data-nav');
+      if (key === activeKey) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+      }
+    });
+  }
+
   // --- Print Trigger ---
   function initPrint() {
     const printBtns = document.querySelectorAll('[data-action-print]');
@@ -118,10 +165,12 @@
       initTheme();
       initEmailCopy();
       initPrint();
+      initNavigation();
     });
   } else {
     initTheme();
     initEmailCopy();
     initPrint();
+    initNavigation();
   }
 })();

@@ -1,24 +1,53 @@
-# Swastik Yadav · Portfolio & Resume Website
+# Swastik Yadav · Product Portfolio & Resume Website
 
-A fast, static portfolio and resume website built with clean semantic HTML, vanilla CSS, and JavaScript. Inspired by the editorial, minimalist paper aesthetic and functional design of [Ronnie Wong's Resume](https://ronniewong.cc/resume.html).
+A fast, minimalist portfolio and case study website built for **Swastik Yadav** (Head of Product & 0-to-1 Product Builder). Crafted with clean semantic HTML, custom typography, vanilla CSS, and JavaScript.
 
 ---
 
-## 🌟 Highlights & Features
+## 🌟 Multi-Page Portfolio Architecture
 
-- **Instant Zero-Latency Load Time:** 100% static files. No heavy client-side frameworks, no cold starts, no server sleep delays. Loads globally in under 50ms via Edge CDN.
-- **Auto / Light / Dark Mode:** Elegant theme switcher supporting system preference (`auto`), crisp paper light mode, and obsidian dark mode with zero theme flickering on page load.
-- **Recruiter-Friendly Print & PDF Engine:** Click **"Print / PDF"** (or press `Ctrl+P` / `Cmd+P`) to generate an ATS-friendly, clean, single/two-page PDF formatted exclusively for hiring teams.
-- **One-Click Email Copy:** Built-in copy button with a floating confirmation toast.
-- **Complete Resume Sections:**
-  - Header & Contact Links (Email, Phone, LinkedIn, GitHub)
-  - Executive Summary
-  - Core Competencies & Skills (Product Strategy, 0-to-1, PRDs, SQL, etc.)
-  - Work Experience (Head of Product at Miles Wealth)
-  - Selected Projects (Salary SIP & Vertex Investment Intelligence)
-  - Education (VIT Bhopal, GVSDP Scholar, Higher Secondary)
-  - Research Experience (Cybersecurity Threats Against Seniors)
-- **Search Engine & Social Previews (SEO):** Full OpenGraph, Twitter Cards, and Schema.org `Person` JSON-LD structured data.
+The website is structured into 4 dedicated pages connected via a unified sticky navigation bar:
+
+1. **Home (`index.html` / `/`):**
+   - High-impact hero introducing Swastik's product leadership and 0-to-1 ethos.
+   - Featured Work highlight card for **Salary SIP** (Miles Wealth).
+   - Selected Project highlight card for **Vertex** (Investment Intelligence Platform).
+   - Core product competencies: 0-to-1 Strategy, User Discovery, Fintech Rails, and Quantitative Rigor.
+   - Direct CTA buttons to Work, Projects, Resume, and Email Copy.
+
+2. **Work (`work.html` / `/work`):**
+   - In-depth Product Case Study for **Salary SIP** at Miles Wealth.
+   - **Executive Overview & Role:** Head of Product owning ideation to launch.
+   - **01 Problem & Opportunity:** The core thesis: *"What if saving happened before spending — directly at the source of income?"*
+   - **02 User Research & Validation:** 20+ qualitative interviews with employees and corporate HR.
+   - **03 Product Definition & Experience:** Core capabilities and mobile product showcase (`assets/salary-sip.png`) highlighting Contribution Setup & Goal Selection.
+   - **04 Ecosystem Partnerships:** Deep dive into Razorpay, FundsNet, Xoxoday, and Zoho Payroll integrations.
+   - **Launch & Execution:** 0-to-1 launch ownership.
+
+3. **Projects (`projects.html` / `/projects`):**
+   - Deep dive into **Vertex — Investment Intelligence Platform**.
+   - Quantitative metric callout badges:
+     - **250K+** stock-level daily records trained & evaluated
+     - **40+** quantitative factor dimensions
+     - **63-day** forward trading-day prediction horizon
+   - Direct link to live platform: [Explore Live Website ↗](https://vertex-engine.onrender.com/)
+   - Methodological breakdown: The Problem, How I Approached It, 3 Key Outputs (Outperformance Probability, Expected Alpha, Factor Attribution), and Key Features.
+   - Academic research highlight on cybersecurity threat mitigation.
+
+4. **Resume (`resume.html` / `/resume`):**
+   - Clean, ATS-friendly, single-sheet printable resume.
+   - Interactive PDF / Print engine (`Ctrl+P` / `Cmd+P` or button trigger).
+   - Direct reciprocal links to Work Case Studies and Project Architecture.
+
+---
+
+## ⚡ Technical Highlights
+
+- **Pure Static Zero-Cold-Start Performance:** Under 50ms global response time via Vercel Edge / GitHub Pages.
+- **Instant Light & Dark Theme Toggle:** Stored in `localStorage` with zero flicker on page load.
+- **Responsive Navigation:** Fluid responsive header with active page indicators across mobile, tablet, and desktop.
+- **Copy Email with Floating Toast Notification:** One-click email copying.
+- **Search Engine & Social Previews (SEO):** Full OpenGraph metadata, Twitter Cards, `sitemap.xml`, `robots.txt`, and Schema.org structured data.
 
 ---
 
@@ -43,66 +72,6 @@ To view the website on your local machine:
 
 ---
 
-## 🌐 Instant Always-On Hosting Setup
+## 🌐 Deployment
 
-Because this is a pure static website, it can be hosted on **Global Edge Networks** with **99.99% uptime** and **zero cost**. It will **never sleep or spin down** (unlike containers on Render or Heroku that take 30-50s to wake up).
-
-### Option 1: GitHub Pages (Recommended — 2 Minutes)
-
-1. Create a repository on GitHub (e.g., `swastikyadav` or `swastik1510.github.io`).
-2. Push your files to the repository:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial portfolio release"
-   git branch -M main
-   git remote add origin https://github.com/swastik1510/swastikyadav.git
-   git push -u origin main
-   ```
-3. In your GitHub repository:
-   - Go to **Settings** > **Pages**.
-   - Under **Build and deployment**, select **Source: Deploy from a branch** -> branch: `main` / `root`.
-   - Click **Save**.
-4. Your website is instantly live at `https://swastik1510.github.io/swastikyadav` (or `https://swastik1510.github.io`).
-
----
-
-### Option 2: Cloudflare Pages or Vercel (Fastest Global CDN)
-
-- **Cloudflare Pages:** Connect your GitHub repo, select framework **None / Static HTML**, output directory `/`. Cloudflare provides 300+ edge locations for sub-30ms load times worldwide.
-- **Vercel:** Run `npx vercel` or import the GitHub repo on [vercel.com](https://vercel.com). Instant SSL and continuous deployment.
-
----
-
-## 🏷️ Setting up Custom Domain (`swastikyadav.com` / `swastikyadav.in`)
-
-When you buy `swastikyadav.com` (or `.in` / `.dev`) from providers like Namecheap, Google/Squarespace, or GoDaddy:
-
-1. **For GitHub Pages:**
-   - The `CNAME` file in this repository already specifies your domain.
-   - In your domain registrar's DNS settings, add:
-     - **Apex A Records** (pointing to GitHub Pages IP addresses):
-       - `185.199.108.153`
-       - `185.199.109.153`
-       - `185.199.110.153`
-       - `185.199.111.153`
-     - **CNAME Record**:
-       - Name: `www`
-       - Value: `swastik1510.github.io`
-   - Check **"Enforce HTTPS"** in GitHub Pages Settings.
-
----
-
-## 📁 File Structure
-
-```text
-├── index.html       # Primary resume & portfolio page
-├── resume.html      # Direct alias for /resume.html
-├── styles.css       # Editorial styling, theme variables, and @media print
-├── script.js        # Theme toggle, clipboard copy, and print handlers
-├── favicon.svg      # Minimalist SVG monogram
-├── robots.txt       # Search engine crawler directives
-├── sitemap.xml      # XML sitemap for SEO
-├── CNAME            # Domain routing file for custom domain
-└── README.md        # Documentation and deployment guide
-```
+The project includes `vercel.json` with clean URL routing (`cleanUrls: true`) and `CNAME` for `swastikyadav.com`. Simply connect the repository to Vercel or GitHub Pages.
