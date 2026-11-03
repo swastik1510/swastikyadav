@@ -3,39 +3,36 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Projects — Vertex Quantitative Intelligence · Swastik Yadav</title>
-  <meta name="description" content="Vertex — Quantitative stock intelligence platform by Swastik Yadav, predicting Nifty 100 outperformance, expected alpha, and explainable factor attribution.">
+  <title>Projects · Swastik Yadav</title>
+  <meta name="description" content="Personal products, quantitative experiments, and prototypes by Swastik Yadav, Head of Product & Product Builder.">
   <meta name="author" content="Swastik Yadav">
   <meta name="robots" content="index, follow">
 
   <!-- Canonical & Icons -->
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="alternate icon" href="favicon.svg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.svg">
 
   <!-- Social OpenGraph & Twitter Cards -->
   <meta property="og:site_name" content="Swastik Yadav">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Vertex — Investment Intelligence Platform · Swastik Yadav">
-  <meta property="og:description" content="Quantitative stock intelligence platform estimating outperformance probabilities and expected alpha across the Nifty 100 over a 63-day horizon.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects · Swastik Yadav">
+  <meta property="og:description" content="Personal products, quantitative experiments, and prototypes by Swastik Yadav.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vertex — Investment Intelligence Platform · Swastik Yadav">
-  <meta name="twitter:description" content="Quantitative stock intelligence platform estimating outperformance probabilities and expected alpha across the Nifty 100 over a 63-day horizon.">
+  <meta name="twitter:title" content="Projects · Swastik Yadav">
+  <meta name="twitter:description" content="Personal products, quantitative experiments, and prototypes by Swastik Yadav.">
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Vertex — Investment Intelligence Platform",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "Web",
-    "url": "https://vertex-engine.onrender.com/",
+    "@type": "CollectionPage",
+    "name": "Projects by Swastik Yadav",
     "author": {
       "@type": "Person",
       "name": "Swastik Yadav",
       "url": "https://swastikyadav.com"
     },
-    "description": "Quantitative stock intelligence platform designed to identify potential outperformers within the Nifty 100."
+    "description": "Personal products, quantitative experiments, and prototypes."
   }
   </script>
 
@@ -51,7 +48,7 @@
   <!-- Fonts and Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
 
@@ -89,165 +86,109 @@
     </div>
   </header>
 
-  <!-- Main Projects Content -->
+  <!-- Main Projects Listing Content -->
   <main class="page-container" role="main">
-    <article class="project-full-entry" aria-labelledby="project-title">
 
-      <!-- Hero Block -->
-      <header class="project-hero-block">
-        <div class="case-top-meta">
-          <span>Personal Project</span>
-          <span class="meta-divider">·</span>
+    <!-- Page Header -->
+    <header class="page-header-block">
+      <p class="page-eyebrow">Projects</p>
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">
+        Personal products, quantitative experiments, and prototypes I have taken from concept to working software. Each case study covers the problem, the decisions I made, and what actually happened.
+      </p>
+    </header>
+
+    <!-- Projects List Stack -->
+    <section class="project-list-stack" aria-label="Selected Projects List">
+
+      <!-- Vertex Project Card -->
+      <article class="project-list-card">
+        <div class="project-card-meta">
+          <span>Personal product</span>
+          <span>·</span>
           <span>2026</span>
-          <span class="meta-divider">·</span>
-          <span>Quantitative Finance &amp; ML</span>
+          <span>·</span>
+          <span class="badge-live">Live</span>
         </div>
 
-        <div class="project-headline-row">
-          <h1 id="project-title" class="project-title">Vertex — Investment Intelligence Platform</h1>
-          <a href="https://vertex-engine.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-external-link">
-            <span>Explore Live Website</span>
+        <h2 class="project-card-title">
+          <a href="/projects/vertex" style="text-decoration: none; color: inherit;">
+            Vertex — quantitative stock intelligence platform predicting Nifty 100 outperformance
+          </a>
+        </h2>
+
+        <p class="project-card-desc">
+          An ML-powered quantitative stock intelligence platform designed to identify potential outperformers within the Nifty 100. It uses predictive modeling to estimate outperformance probabilities over a 63-day horizon, along with expected alpha and explainable factor attribution.
+        </p>
+
+        <ul class="project-card-highlights">
+          <li>250K+ stock-level daily records trained &amp; evaluated</li>
+          <li>40+ quantitative factor dimensions across momentum, volume &amp; risk</li>
+          <li>63 trading-day forward prediction horizon</li>
+          <li>~70% classification accuracy on held-out test data</li>
+        </ul>
+
+        <div class="project-card-footer">
+          <a href="/projects/vertex" class="read-cta">
+            <span>Read Project Case Study</span>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <div class="project-card-actions">
+            <a href="https://vertex-engine.onrender.com/" target="_blank" rel="noopener noreferrer" class="view-all-link">
+              <span>Live Platform</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Academic Research Card -->
+      <article class="project-list-card">
+        <div class="project-card-meta">
+          <span>Research Paper</span>
+          <span>·</span>
+          <span>2024</span>
+          <span>·</span>
+          <span>Published</span>
+        </div>
+
+        <h2 class="project-card-title">
+          <a href="/resume" style="text-decoration: none; color: inherit;">
+            Mitigating Cybersecurity Threats Against Seniors: Comprehensive Solutions
+          </a>
+        </h2>
+
+        <p class="project-card-desc">
+          Conducted a comprehensive research study on cybersecurity threats facing senior citizens. Authored a paper proposing targeted technological and social interventions, identifying key cognitive vulnerabilities and social engineering attack surfaces through qualitative surveys.
+        </p>
+
+        <ul class="project-card-highlights">
+          <li>Social surveys conducted across senior demographics</li>
+          <li>Targeted intervention framework proposed</li>
+          <li>Presented solutions for cognitive &amp; interface friction</li>
+          <li>GVSDP Academic Scholarship research portfolio</li>
+        </ul>
+
+        <div class="project-card-footer">
+          <a href="/resume" class="read-cta">
+            <span>View on Resume</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
           </a>
         </div>
+      </article>
 
-        <p class="case-prose" style="font-size: 17px; margin-top: 6px;">
-          Vertex is a quantitative stock intelligence platform designed to identify potential outperformers within the Nifty 100. It uses predictive modeling to estimate the probability of beating the benchmark over the next 63 trading days, along with expected excess returns and the factors influencing each prediction.
-        </p>
+    </section>
 
-        <!-- Key Metrics Badges / Stats Pills -->
-        <div class="stats-metrics-grid" aria-label="Key Model Specifications">
-          <div class="metric-pill-card">
-            <span class="metric-number">250K+</span>
-            <span class="metric-caption">Stock-level daily records trained &amp; evaluated</span>
-          </div>
-
-          <div class="metric-pill-card">
-            <span class="metric-number">40+</span>
-            <span class="metric-caption">Quantitative factor dimensions evaluated</span>
-          </div>
-
-          <div class="metric-pill-card">
-            <span class="metric-number">63 Days</span>
-            <span class="metric-caption">Trading-day forward prediction horizon</span>
-          </div>
-        </div>
-      </header>
-
-      <!-- The Problem -->
-      <section class="project-content-block" aria-labelledby="problem-heading">
-        <h2 id="problem-heading" class="project-block-title">The problem</h2>
-        <p class="case-prose">
-          Identifying stocks that can outperform a market benchmark is more challenging than simply looking at historical returns or individual technical indicators. Investors have access to large amounts of market data, but turning that information into a forward-looking view of potential performance is not straightforward.
-        </p>
-        <p class="case-prose">
-          I wanted to explore whether predictive modeling could help identify potential Nifty 100 outperformers, estimate their expected excess returns, and make the reasoning behind each prediction understandable.
-        </p>
-      </section>
-
-      <!-- How I approached it -->
-      <section class="project-content-block" aria-labelledby="approach-heading">
-        <h2 id="approach-heading" class="project-block-title">How I approached it</h2>
-        <p class="case-prose">
-          I started by defining the prediction objective: estimating whether a stock would outperform the Nifty 100 over the next 63 trading days, rather than predicting its absolute price.
-        </p>
-        <p class="case-prose">
-          I then developed predictive models using 40+ quantitative factor dimensions across price momentum, trend strength, volume, and downside risk, trained and evaluated on 250K+ stock-level daily records.
-        </p>
-        <p class="case-prose">
-          The product was designed around three outputs — probability of outperformance, expected alpha, and factor attribution — so users could understand not just which stocks the model identified, but also the factors driving each prediction.
-        </p>
-      </section>
-
-      <!-- How It Works -->
-      <section class="project-content-block" aria-labelledby="how-it-works-heading">
-        <h2 id="how-it-works-heading" class="project-block-title">How It Works</h2>
-        <p class="case-prose">
-          For each stock, Vertex generates three key outputs:
-        </p>
-
-        <div class="outputs-grid">
-          <div class="output-card">
-            <h3 class="output-card-title">Outperformance Probability</h3>
-            <p class="output-card-desc">
-              Likelihood of beating the Nifty 100 index over the next 63 trading days.
-            </p>
-          </div>
-
-          <div class="output-card">
-            <h3 class="output-card-title">Expected Alpha</h3>
-            <p class="output-card-desc">
-              Estimated excess return generated by the stock relative to the benchmark.
-            </p>
-          </div>
-
-          <div class="output-card">
-            <h3 class="output-card-title">Factor Attribution</h3>
-            <p class="output-card-desc">
-              Key bullish drivers and downside risks influencing each specific prediction.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Key Features -->
-      <section class="project-content-block" aria-labelledby="key-features-heading">
-        <h2 id="key-features-heading" class="project-block-title">Key Features</h2>
-
-        <div class="features-grid">
-          <div class="feature-box">
-            <h3 class="feature-box-title">Prediction Dashboard</h3>
-            <p class="feature-box-desc">
-              View forward stock predictions and shortlist potential outperformers across the Nifty 100 universe.
-            </p>
-          </div>
-
-          <div class="feature-box">
-            <h3 class="feature-box-title">Explainable Predictions</h3>
-            <p class="feature-box-desc">
-              Explore the quantitative factors and risk attributes contributing to each stock's predicted performance.
-            </p>
-          </div>
-
-          <div class="feature-box">
-            <h3 class="feature-box-title">Historical Evaluation</h3>
-            <p class="feature-box-desc">
-              Select historical dates and backtest model predictions against actual subsequent stock performance.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Disclaimer & Note -->
-      <section class="disclaimer-banner" role="note" aria-label="Disclaimer">
-        <strong>Disclaimer:</strong> Vertex is an experimental quantitative analytics project, not SEBI-registered investment advice or a source of buy/sell recommendations. Historical results do not guarantee future performance.
-      </section>
-
-      <!-- Academic Research Section -->
-      <section class="additional-projects-section" aria-labelledby="research-heading">
-        <h2 id="research-heading" class="project-block-title">Academic Research</h2>
-        <div class="teaser-card" style="cursor: default;">
-          <div class="teaser-card-eyebrow">
-            <span class="teaser-badge">Research Study &amp; Publication</span>
-            <span class="teaser-year">2024</span>
-          </div>
-          <h3 class="teaser-title" style="font-size: 19px;">Mitigating Cybersecurity Threats Against Seniors: Comprehensive Solutions</h3>
-          <p class="teaser-desc">
-            Conducted a comprehensive research study on cybersecurity threats facing senior citizens. Authored a paper proposing targeted technological and social interventions, identifying key cognitive vulnerabilities and social engineering attack surfaces through qualitative surveys.
-          </p>
-          <div class="tags-cluster">
-            <span class="tag-pill">Cybersecurity</span>
-            <span class="tag-pill">Social Surveys</span>
-            <span class="tag-pill">User Vulnerabilities</span>
-            <span class="tag-pill">Human-Computer Interaction</span>
-          </div>
-        </div>
-      </section>
-
-    </article>
   </main>
 
   <!-- Clean Minimalist Footer -->
@@ -267,7 +208,6 @@
   </footer>
 
   <!-- Script for Theme Toggle, Email Copy, and Navigation -->
-  <script src="script.js" defer></script>
+  <script src="/script.js" defer></script>
 </body>
 </html>
-

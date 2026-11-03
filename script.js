@@ -115,6 +115,8 @@
           link.setAttribute('href', 'index.html');
         } else if (href === '/work') {
           link.setAttribute('href', 'work.html');
+        } else if (href === '/projects/vertex') {
+          link.setAttribute('href', 'vertex.html');
         } else if (href === '/projects') {
           link.setAttribute('href', 'projects.html');
         } else if (href === '/resume') {
@@ -127,7 +129,7 @@
     let activeKey = 'home';
     if (path.includes('work')) {
       activeKey = 'work';
-    } else if (path.includes('project')) {
+    } else if (path.includes('project') || path.includes('vertex')) {
       activeKey = 'projects';
     } else if (path.includes('resume')) {
       activeKey = 'resume';
