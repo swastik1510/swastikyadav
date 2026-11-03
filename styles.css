@@ -389,6 +389,21 @@ p {
   color: var(--text);
 }
 
+.resume-entry-title a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: var(--transition);
+}
+
+.resume-entry-title a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.8;
+}
+
 .resume-date {
   font-family: var(--mono);
   font-size: 12px;
@@ -1470,6 +1485,11 @@ p {
   .resume-entry-title,
   .education-degree {
     font-size: 11pt !important;
+    color: #000000 !important;
+  }
+
+  .resume-entry-title a {
+    text-decoration: none !important;
     color: #000000 !important;
   }
 
