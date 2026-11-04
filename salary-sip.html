@@ -31,13 +31,12 @@
       "@type": "Person",
       "name": "Swastik Yadav",
       "jobTitle": "Head of Product",
-      "url": "https://swastikyadav.com"
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Miles Wealth"
+      }
     },
-    "description": "0-to-1 Product Development for Salary SIP: Employee Financial Wellbeing Platform at Miles Wealth",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Miles Wealth"
-    }
+    "description": "Taking Salary SIP from 0 to 1: B2B2C financial wellbeing platform enabling employees to invest directly from payroll with employer contributions."
   }
   </script>
 
@@ -53,7 +52,7 @@
   <!-- Fonts and Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=4">
+  <link rel="stylesheet" href="/styles.css?v=5">
 </head>
 <body>
 
@@ -91,257 +90,87 @@
     </div>
   </header>
 
-  <!-- Main Case Study Content -->
+  <!-- Main Work Detail Content -->
   <main class="page-container" role="main">
 
-    <!-- Breadcrumb back link -->
-    <a href="/work" class="back-link">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="19" y1="12" x2="5" y2="12"></line>
-        <polyline points="12 19 5 12 12 5"></polyline>
-      </svg>
-      <span>Back to Work</span>
-    </a>
+    <article class="detail-article" aria-labelledby="detail-title">
 
-    <article class="case-study" aria-labelledby="case-title">
+      <!-- Detail Header Block (Ujjwal Kumar Editorial Style) -->
+      <header class="detail-header">
+        <p class="detail-breadcrumb">
+          <a href="/">Swastik Yadav</a>
+          <span class="separator">/</span>
+          <a href="/work">Work</a>
+          <span class="separator">/</span>
+          <span class="current">Salary SIP</span>
+        </p>
 
-      <!-- Hero Header -->
-      <header class="case-study-hero">
-        <div class="case-top-meta">
+        <div class="detail-eyebrow">
           <span>Miles Wealth</span>
-          <span class="meta-divider">·</span>
+          <span>·</span>
           <span>2026</span>
+          <span>·</span>
+          <span class="badge-live">Live</span>
         </div>
 
-        <h1 id="case-title" class="case-main-title">Salary SIP</h1>
-        <p class="case-sub-header">Employee Financial Wellbeing Platform</p>
+        <h1 id="detail-title" class="detail-title">Salary SIP — Employee Financial Wellbeing Platform</h1>
+
+        <p class="detail-lead">
+          Salary SIP is the employee financial wellbeing platform I owned at Miles Wealth. It enables corporate employees to invest a portion of their salary directly into personalized mutual fund portfolios, with automated matching and additional contributions from their employers.
+        </p>
+
+        <p class="detail-role">Head of Product — owned product strategy, user discovery, MVP definition, and ecosystem integrations</p>
+
+        <!-- 3-Column Highlights Grid -->
+        <div class="detail-stats-grid" aria-label="Key Product Highlights">
+          <div class="detail-stat-item">
+            <span class="detail-stat-label-top">product stage</span>
+            <span class="detail-stat-value">0 to 1</span>
+            <span class="detail-stat-label-bottom">ideation to live rollout</span>
+          </div>
+
+          <div class="detail-stat-item">
+            <span class="detail-stat-label-top">discovery interviews</span>
+            <span class="detail-stat-value">20+</span>
+            <span class="detail-stat-label-bottom">employees &amp; HR leaders</span>
+          </div>
+
+          <div class="detail-stat-item">
+            <span class="detail-stat-label-top">ecosystem rails</span>
+            <span class="detail-stat-value">4+</span>
+            <span class="detail-stat-label-bottom">payroll &amp; fintech partners</span>
+          </div>
+        </div>
+
+        <!-- Product Image Preview (Completely Static) -->
+        <div class="detail-media-frame">
+          <img src="/assets/salary-sip.png" alt="Miles Wealth Salary SIP Mobile App Interface" loading="lazy">
+        </div>
       </header>
 
-      <!-- Overview & Role Box -->
-      <section class="case-overview-box" aria-label="Project Overview and Role">
-        <div class="overview-col">
-          <h4>Product Overview</h4>
-          <p>
-            Salary SIP enables employees to invest a portion of their salary into personalized mutual fund portfolios, with additional contributions from their employers.
-          </p>
-        </div>
-        <div class="overview-col">
-          <h4>My Role</h4>
-          <p>
-            <strong>Head of Product</strong> — owned product development from ideation to launch, working closely with the founder and development team.
-          </p>
-        </div>
-      </section>
-
-      <!-- Step 01: Problem & Opportunity -->
-      <section class="case-step-section" aria-labelledby="step-01-heading">
-        <div class="case-step-header">
-          <span class="step-number">01</span>
-          <h2 id="step-01-heading" class="step-heading">Problem &amp; Opportunity</h2>
-        </div>
-
-        <p class="case-prose">
-          Corporate employees often struggle to build wealth through consistent saving and investing, even with a regular income. Most retail investment products demand continuous manual discipline after monthly expenses have already depleted liquid funds.
+      <!-- The problem -->
+      <section class="detail-section" aria-labelledby="problem-heading">
+        <h2 id="problem-heading" class="detail-section-title">The problem</h2>
+        <p>
+          Corporate employees struggle to build wealth through consistent investing, even with a steady monthly income. Most retail investment products demand continuous manual discipline after monthly living expenses have already depleted liquid funds. By the time a salary lands in a savings account, discretionary spending competes directly with savings goals.
         </p>
-
-        <div class="opportunity-callout">
-          <p class="opportunity-label">Product Opportunity</p>
-          <p class="opportunity-quote">
-            What if saving happened before spending — directly at the source of income?
-          </p>
-        </div>
-      </section>
-
-      <!-- Step 02: User Research & Validation -->
-      <section class="case-step-section" aria-labelledby="step-02-heading">
-        <div class="case-step-header">
-          <span class="step-number">02</span>
-          <h2 id="step-02-heading" class="step-heading">User Research &amp; Validation</h2>
-        </div>
-
-        <p class="case-prose">
-          Led <strong>20+ employee and employer interviews</strong> to understand financial wellbeing needs, investment habits, and employer benefit expectations.
-        </p>
-
-        <div class="insights-grid">
-          <!-- Employee Insights -->
-          <div class="insight-card">
-            <h3 class="insight-card-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-              <span>Employee Insights</span>
-            </h3>
-            <ul class="insight-list">
-              <li>Employees found it difficult to invest consistently and faced friction when getting started.</li>
-              <li>Employer contributions made the proposition significantly more attractive.</li>
-              <li>Employer involvement helped build trust in the platform and lowered skepticism.</li>
-            </ul>
-          </div>
-
-          <!-- Employer Insights -->
-          <div class="insight-card">
-            <h3 class="insight-card-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              </svg>
-              <span>Employer Insights</span>
-            </h3>
-            <ul class="insight-list">
-              <li>Employers wanted more differentiated, high-retention employee benefits.</li>
-              <li>Financial wellbeing offered an impactful opportunity to add genuine value to talent packages.</li>
-              <li>Contribution costs and administrative friction were the primary adoption concerns.</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Step 03: Product Definition & Experience -->
-      <section class="case-step-section" aria-labelledby="step-03-heading">
-        <div class="case-step-header">
-          <span class="step-number">03</span>
-          <h2 id="step-03-heading" class="step-heading">Product Definition &amp; Experience</h2>
-        </div>
-
-        <p class="case-prose">
-          Defined employee workflows across onboarding, payroll-linked deductions, and employer contributions, translating requirements into product specifications and working with the founder and developers on execution.
-        </p>
-
-        <!-- Core Capabilities Grid -->
-        <div class="capabilities-grid">
-          <div class="capability-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-            </svg>
-            <span class="capability-text">AI-assisted risk assessment and personalized mutual fund recommendations.</span>
-          </div>
-
-          <div class="capability-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            <span class="capability-text">Goal-based investment planning tailored to individual life milestones.</span>
-          </div>
-
-          <div class="capability-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-              <line x1="6" y1="12" x2="18" y2="12"></line>
-            </svg>
-            <span class="capability-text">Payroll-linked employee contributions and additional employer contributions.</span>
-          </div>
-
-          <div class="capability-card">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-              <polyline points="17 6 23 6 23 12"></polyline>
-            </svg>
-            <span class="capability-text">Dynamic salary-based contribution adjustments as income grows.</span>
-          </div>
-        </div>
-
-        <!-- Product Visual Showcase -->
-        <div class="product-showcase">
-          <div class="showcase-img-wrap">
-            <img src="/assets/salary-sip.png" alt="Salary SIP" class="showcase-img" loading="lazy">
-          </div>
-        </div>
-      </section>
-
-      <!-- Step 04: Product Execution & Ecosystem Partnerships -->
-      <section class="case-step-section" aria-labelledby="step-04-heading">
-        <div class="case-step-header">
-          <span class="step-number">04</span>
-          <h2 id="step-04-heading" class="step-heading">Product Execution &amp; Ecosystem Partnerships</h2>
-        </div>
-
-        <p class="case-prose">
-          To build an end-to-end B2B2C payroll-investing pipeline, I led and architected key integrations across fintech rails, mutual fund execution systems, payroll engines, and corporate distribution channels.
-        </p>
-
-        <div class="partnerships-grid">
-          <!-- Razorpay -->
-          <div class="partner-box">
-            <div class="partner-header">
-              <h3 class="partner-name">Razorpay</h3>
-              <span class="partner-role-tag">Payments Rail</span>
-            </div>
-            <p class="partner-desc">
-              Integrated payment processing for seamless employer payments towards employee investments.
-            </p>
-          </div>
-
-          <!-- FundsNet -->
-          <div class="partner-box">
-            <div class="partner-header">
-              <h3 class="partner-name">FundsNet</h3>
-              <span class="partner-role-tag">MF Infrastructure</span>
-            </div>
-            <p class="partner-desc">
-              Integrated APIs to submit employee-level mutual fund transaction files and ensure compliance.
-            </p>
-          </div>
-
-          <!-- Xoxoday -->
-          <div class="partner-box">
-            <div class="partner-header">
-              <h3 class="partner-name">Xoxoday</h3>
-              <span class="partner-role-tag">Distribution Partner</span>
-            </div>
-            <p class="partner-desc">
-              Led the partnership to list Salary SIP on its employee benefits platform for B2B employer discovery.
-            </p>
-          </div>
-
-          <!-- Zoho Payroll -->
-          <div class="partner-box">
-            <div class="partner-header">
-              <h3 class="partner-name">Zoho Payroll</h3>
-              <span class="partner-role-tag">Payroll Integration</span>
-            </div>
-            <p class="partner-desc">
-              Integrated payroll software to support salary-linked contribution workflows; three additional payroll integrations planned.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Launch & Execution -->
-      <section class="launch-ownership-card" aria-label="Launch and Execution Ownership">
-        <span class="launch-label">Launch &amp; Execution</span>
-        <p class="launch-desc">
-          Owned overall product launch planning and coordinated execution with the founder and development team.
+        <p>
+          Employers, meanwhile, face increasing employee attrition and want high-retention, differentiated financial wellbeing benefits beyond standard group insurance. However, HR teams were resistant to administrative overhead, payroll reconciliation headaches, and complex compliance requirements.
         </p>
       </section>
 
-      <!-- Next Project Callout (Vertex) -->
-      <section class="home-section" style="margin-top: 16px;">
-        <div class="section-top-bar">
-          <h2>Next in Portfolio</h2>
-          <a href="/projects" class="view-all-link">View All Projects →</a>
-        </div>
-
-        <a href="/projects/vertex" class="teaser-card">
-          <div class="teaser-card-eyebrow">
-            <span class="teaser-badge">Quantitative Platform</span>
-            <span class="teaser-year">2026</span>
-          </div>
-          <h3 class="teaser-title">Vertex — Investment Intelligence Platform</h3>
-          <p class="teaser-desc">
-            Quantitative stock intelligence platform estimating outperformance probabilities and expected alpha across the Nifty 100 over a 63-day horizon.
-          </p>
-          <div class="teaser-footer">
-            <div class="tags-cluster">
-              <span class="tag-pill">250K+ Records</span>
-              <span class="tag-pill">40+ Factors</span>
-              <span class="tag-pill">63-Day Horizon</span>
-            </div>
-            <span class="read-cta">Explore Project →</span>
-          </div>
-        </a>
+      <!-- How I approached it -->
+      <section class="detail-section" aria-labelledby="approach-heading">
+        <h2 id="approach-heading" class="detail-section-title">How I approached it</h2>
+        <p>
+          I started with a fundamental shift in user psychology: what if saving happened before spending, directly at the payroll source? If investments are deducted alongside payroll and matched by employers, consistent wealth generation becomes automatic rather than a monthly test of discipline.
+        </p>
+        <p>
+          I conducted 20+ qualitative interviews across corporate employees and HR leaders to validate the model. Employees confirmed that employer matching removed hesitation and established immediate trust, while employers required zero-overhead integration into existing payroll software.
+        </p>
+        <p>
+          To bring Salary SIP from 0 to 1, I mapped the end-to-end B2B2C user journey and architected the integration rails: connecting Razorpay for employer contribution flows, FundsNet for automated mutual fund transaction execution, and Zoho Payroll to sync employee deduction schedules directly with corporate payroll systems.
+        </p>
       </section>
 
     </article>
@@ -367,4 +196,3 @@
   <script src="/script.js" defer></script>
 </body>
 </html>
-
