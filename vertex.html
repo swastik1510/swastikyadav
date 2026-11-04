@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vertex · Swastik Yadav</title>
-  <meta name="description" content="Vertex quantitative stock intelligence platform by Swastik Yadav. Predicting 63-day benchmark outperformance across the Nifty 100 using machine learning and factor modeling.">
+  <title>Vertex — Investment Intelligence Platform · Swastik Yadav</title>
+  <meta name="description" content="Vertex is a quantitative stock intelligence platform designed to identify potential outperformers within the Nifty 100 using predictive factor modeling.">
   <meta name="author" content="Swastik Yadav">
   <meta name="robots" content="index, follow">
 
@@ -15,10 +15,10 @@
   <!-- Social OpenGraph & Twitter Cards -->
   <meta property="og:site_name" content="Swastik Yadav">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Vertex — Quantitative Intelligence Platform · Swastik Yadav">
+  <meta property="og:title" content="Vertex — Investment Intelligence Platform · Swastik Yadav">
   <meta property="og:description" content="Predicting Nifty 100 benchmark outperformance over a 63-day horizon using 40+ quantitative factor dimensions and explainable machine learning.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vertex — Quantitative Intelligence Platform · Swastik Yadav">
+  <meta name="twitter:title" content="Vertex — Investment Intelligence Platform · Swastik Yadav">
   <meta name="twitter:description" content="Predicting Nifty 100 benchmark outperformance over a 63-day horizon using 40+ quantitative factor dimensions and explainable machine learning.">
 
   <!-- Structured Data (JSON-LD) -->
@@ -26,7 +26,7 @@
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "name": "Vertex Quantitative Intelligence Platform",
+    "name": "Vertex Investment Intelligence Platform",
     "operatingSystem": "Web",
     "applicationCategory": "FinanceApplication",
     "author": {
@@ -103,46 +103,37 @@
         </p>
 
         <div class="detail-eyebrow">
-          <span>Personal Product</span>
+          <span>Personal Project</span>
           <span>·</span>
           <span>2026</span>
         </div>
 
         <div class="detail-title-wrap">
-          <h1 id="detail-title" class="detail-title">Vertex — Quantitative Stock Intelligence Platform</h1>
+          <h1 id="detail-title" class="detail-title">Vertex — Investment Intelligence Platform</h1>
           <a href="https://vertex-engine.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn-external-link">
-            <span>View Demo</span>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="7" y1="17" x2="17" y2="7"></line>
-              <polyline points="7 7 17 7 17 17"></polyline>
-            </svg>
+            <span>Explore Live Website →</span>
           </a>
         </div>
 
         <p class="detail-lead">
-          Vertex is an ML-powered quantitative stock intelligence platform designed to forecast 63-day alpha across the Nifty 100. It combines predictive factor modeling with full attribution transparency, helping investors evaluate benchmark outperformance probabilities and key driving factors.
+          Vertex is a quantitative stock intelligence platform designed to identify potential outperformers within the Nifty 100. It uses predictive modeling to estimate the probability of beating the benchmark over the next 63 trading days, along with expected excess returns and the factors influencing each prediction.
         </p>
-
-        <p class="detail-role">Quantitative Product Builder — modeled factor alpha, predictive pipeline, and web platform</p>
 
         <!-- 3-Column Highlights Grid -->
         <div class="detail-stats-grid" aria-label="Key Model Specifications">
           <div class="detail-stat-item">
-            <span class="detail-stat-label-top">dataset size</span>
             <span class="detail-stat-value">250K+</span>
-            <span class="detail-stat-label-bottom">daily records evaluated</span>
+            <span class="detail-stat-label-bottom">Stock-level daily records</span>
           </div>
 
           <div class="detail-stat-item">
-            <span class="detail-stat-label-top">factor inputs</span>
             <span class="detail-stat-value">40+</span>
-            <span class="detail-stat-label-bottom">quantitative dimensions</span>
+            <span class="detail-stat-label-bottom">Quantitative factor dimensions</span>
           </div>
 
           <div class="detail-stat-item">
-            <span class="detail-stat-label-top">prediction horizon</span>
-            <span class="detail-stat-value">63 days</span>
-            <span class="detail-stat-label-bottom">forward alpha target</span>
+            <span class="detail-stat-value">63</span>
+            <span class="detail-stat-label-bottom">Trading-day prediction horizon</span>
           </div>
         </div>
 
@@ -152,34 +143,56 @@
         </div>
       </header>
 
-      <!-- The problem -->
+      <!-- The Problem -->
       <section class="detail-section" aria-labelledby="problem-heading">
-        <h2 id="problem-heading" class="detail-section-title">The problem</h2>
+        <h2 id="problem-heading" class="detail-section-title">The Problem</h2>
         <p>
-          Identifying equities capable of beating a market benchmark over a medium-term horizon is challenging. Most retail investors and discretionary analysts rely on lagging historical returns, isolated technical chart patterns, or subjective narratives.
+          Identifying stocks that can outperform a market benchmark is more challenging than simply looking at historical returns or individual technical indicators. Investors have access to large amounts of market data, but turning that information into a forward-looking view of potential performance is not straightforward.
         </p>
         <p>
-          While massive amounts of market data exist, converting price action, volume trends, and risk metrics into a probabilistic, forward-looking view requires rigorous quantitative modeling. Furthermore, most machine learning models in finance function as opaque black boxes, leaving investors without any explanation of why a prediction was made.
+          I wanted to explore whether predictive modeling could help identify potential Nifty 100 outperformers, estimate their expected excess returns, and make the reasoning behind each prediction understandable.
         </p>
       </section>
 
-      <!-- How I approached it -->
+      <!-- How I Approached It -->
       <section class="detail-section" aria-labelledby="approach-heading">
-        <h2 id="approach-heading" class="detail-section-title">How I approached it</h2>
+        <h2 id="approach-heading" class="detail-section-title">How I Approached It</h2>
         <p>
-          I formulated the prediction problem not as forecasting absolute prices, but as estimating 63-trading-day forward excess return (alpha) relative to the Nifty 100 benchmark. This anchored the objective directly around outperforming the market rather than betting on market direction.
+          I started by defining the prediction objective: estimating whether a stock would outperform the Nifty 100 over the next 63 trading days, rather than predicting its absolute price.
         </p>
         <p>
-          I engineered a dataset of over 250,000 stock-level daily observations across 40+ quantitative factor dimensions, spanning short- and medium-term price momentum, trend stability, volume shocks, and downside volatility risk.
+          I then developed predictive models using 40+ quantitative factor dimensions across price momentum, trend strength, volume, and downside risk, trained and evaluated on 250K+ stock-level daily records.
         </p>
         <p>
-          The platform was designed around three clear, explainable outputs: outperformance probability, expected alpha, and factor attribution. By highlighting the primary bullish drivers and risk factors for each stock, investors can see the exact quantitative rationale behind every forecast.
+          The platform brings these predictions together in a dashboard, allowing users to explore potential outperformers, understand the factors influencing each prediction, and evaluate model performance against historical outcomes.
+        </p>
+      </section>
+
+      <!-- How the Platform Works -->
+      <section class="detail-section" aria-labelledby="how-it-works-heading">
+        <h2 id="how-it-works-heading" class="detail-section-title">How the Platform Works</h2>
+        <p><strong>Stock Predictions:</strong> Evaluates stocks across the Nifty 100 and generates an outperformance probability and expected alpha for each.</p>
+        <p><strong>Factor Attribution:</strong> Breaks down the factors driving each prediction, highlighting bullish signals and potential risks.</p>
+        <p><strong>Historical Evaluation:</strong> Allows users to select historical dates and compare model predictions against actual stock performance.</p>
+      </section>
+
+      <!-- Product Vision -->
+      <section class="detail-section" aria-labelledby="vision-heading">
+        <h2 id="vision-heading" class="detail-section-title">Product Vision</h2>
+        <p>
+          The next step for Vertex is to transition from historical test data to live market data, enabling it to generate predictions and investment signals based on current market conditions.
+        </p>
+        <p>
+          The long-term vision for Vertex is to evolve beyond stock-level predictions into an intelligence layer for investment products.
+        </p>
+        <p>
+          The goal is to build a connected system that supports the investment journey — from discovering opportunities and generating investment signals to constructing and managing portfolios.
         </p>
       </section>
 
       <!-- Disclaimer & Note -->
       <p class="detail-disclaimer">
-        Disclaimer: Vertex is an experimental quantitative analytics project built for demonstration and research, not SEBI-registered investment advice or a solicitation for securities.
+        Vertex is an experimental quantitative analytics project, not SEBI-registered investment advice or a source of buy/sell recommendations. Historical results do not guarantee future performance.
       </p>
 
     </article>
