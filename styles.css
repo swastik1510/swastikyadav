@@ -1307,6 +1307,21 @@ p {
    Used across both Work and Projects pages
    ========================================================================== */
 
+/* Subpage Top Bar (Ujjwal Kumar Style Minimal Breadcrumb Nav) */
+.subpage-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.subpage-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .page-header-block {
   display: flex;
   flex-direction: column;
@@ -1871,6 +1886,7 @@ p {
 
   .site-header,
   .site-footer,
+  .subpage-top-bar,
   .toast,
   .theme-toggle {
     display: none !important;
