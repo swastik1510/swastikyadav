@@ -1358,6 +1358,7 @@ p {
   text-decoration: none;
   cursor: pointer;
   opacity: 1 !important;
+  transform: none !important;
   transition: border-color 0.2s ease;
 }
 
@@ -1365,6 +1366,7 @@ p {
 .showcase-media:focus {
   border-color: var(--border-strong);
   opacity: 1 !important;
+  transform: none !important;
 }
 
 .showcase-media img {
@@ -1375,11 +1377,14 @@ p {
   display: block;
   opacity: 1 !important;
   filter: none !important;
+  transform: none !important;
+  transition: none !important;
 }
 
 .showcase-media:hover img {
   opacity: 1 !important;
   filter: none !important;
+  transform: none !important;
 }
 
 /* Metadata Bar */
