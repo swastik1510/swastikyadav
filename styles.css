@@ -1357,12 +1357,11 @@ p {
   justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease;
 }
 
 .showcase-media:hover {
   border-color: var(--border-strong);
-  transform: translateY(-2px);
 }
 
 .showcase-media img {
@@ -1371,11 +1370,6 @@ p {
   object-fit: cover;
   object-position: center;
   display: block;
-  transition: transform 0.3s ease;
-}
-
-.showcase-media:hover img {
-  transform: scale(1.015);
 }
 
 /* Metadata Bar */
