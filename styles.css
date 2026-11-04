@@ -997,36 +997,19 @@ p {
   font-weight: 500;
 }
 
-/* Product Experience Mockup Showcase */
-.product-showcase {
+/* Product Image Showcase */
+.product-showcase,
+.product-showcase:hover {
   margin: 20px 0;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border) !important;
   border-radius: 8px;
-  background: var(--card-bg);
+  background: #081a14;
   overflow: hidden;
-}
-
-.showcase-header {
-  padding: 14px 20px;
-  background: var(--header-bg);
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.showcase-label {
-  font-family: var(--mono);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-}
-
-.showcase-screens-tags {
-  display: flex;
-  gap: 8px;
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 .showcase-img-wrap {
@@ -1034,28 +1017,22 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  padding: 0;
   background: #081a14;
 }
 
-.showcase-img {
+.showcase-img,
+.showcase-img:hover {
   width: 100%;
   height: auto;
-  max-height: 520px;
+  max-height: 480px;
   object-fit: contain;
   display: block;
-  border-radius: 4px;
-}
-
-.showcase-caption {
-  padding: 14px 20px;
-  font-size: 13.5px;
-  color: var(--text-muted);
-  border-top: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
 }
 
 /* Ecosystem Partnerships Grid */
