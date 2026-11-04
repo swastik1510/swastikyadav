@@ -477,6 +477,24 @@ p {
   color: var(--text-muted);
 }
 
+.divider-slash {
+  font-weight: 300;
+  opacity: 0.35;
+  margin: 0 4px;
+}
+
+.org-name {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.achievement-desc {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}
+
 .education-achievement {
   font-size: 13.5px;
   color: var(--text-secondary);
