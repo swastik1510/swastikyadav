@@ -1979,7 +1979,7 @@ p {
 }
 
 /* ==========================================================================
-   MINIMAL EDITORIAL HOMEPAGE (WIDE LAYOUT)
+   MINIMAL EDITORIAL HOMEPAGE (WIDE LAYOUT & FULL-SCREEN FIRST VIEW)
    ========================================================================== */
 body.page-home .header-container {
   width: 100%;
@@ -1989,32 +1989,35 @@ body.page-home .header-container {
 body.page-home .page-container {
   width: 100%;
   max-width: var(--page-wide);
-  padding: 56px 28px 96px;
+  padding: 0 28px 96px;
 }
 
 .home-clean-layout {
   display: flex;
   flex-direction: column;
-  gap: 64px;
 }
 
 .hero-quote-block {
+  min-height: calc(100vh - 60px);
+  min-height: calc(100dvh - 60px);
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-bottom: 48px;
-  border-bottom: 1px solid var(--border);
+  justify-content: center;
+  gap: clamp(28px, 4vh, 44px);
+  padding: clamp(32px, 6vh, 64px) 0;
+  box-sizing: border-box;
+  border-bottom: none;
 }
 
 .hero-statement-text {
   font-family: var(--serif);
-  font-size: clamp(32px, 4.2vw, 50px);
-  line-height: 1.2;
+  font-size: clamp(36px, 5.2vw, 62px);
+  line-height: 1.16;
   font-weight: 600;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
   color: var(--text);
   margin: 0;
-  max-width: 920px;
+  max-width: 980px;
 }
 
 .hero-identity-row {
@@ -2028,7 +2031,7 @@ body.page-home .page-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 15.5px;
+  font-size: 16px;
 }
 
 .identity-name {
@@ -2049,7 +2052,7 @@ body.page-home .page-container {
 .identity-links {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 }
 
 .arrow-link {
@@ -2069,11 +2072,14 @@ body.page-home .page-container {
   opacity: 0.8;
 }
 
-/* My Approach Section (Vertical & Non-Card Editorial Layout) */
+/* My Approach Section (Vertical & Non-Card Editorial Layout - Appears on scroll) */
 .approach-block {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 32px;
+  padding-top: clamp(60px, 10vh, 100px);
+  padding-bottom: 40px;
+  border-top: 1px solid var(--border);
 }
 
 .approach-label {
