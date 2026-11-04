@@ -2019,10 +2019,9 @@ body.page-home .page-container {
 
 .hero-identity-row {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
 }
 
 .identity-badge-group {
