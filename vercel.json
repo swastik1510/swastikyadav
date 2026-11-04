@@ -1,6 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
+    { "source": "/work/salary-sip", "destination": "/salary-sip.html" },
     { "source": "/projects/vertex", "destination": "/vertex.html" }
   ]
 }

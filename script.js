@@ -113,6 +113,8 @@
         const href = link.getAttribute('href');
         if (href === '/') {
           link.setAttribute('href', 'index.html');
+        } else if (href === '/work/salary-sip') {
+          link.setAttribute('href', 'salary-sip.html');
         } else if (href === '/work') {
           link.setAttribute('href', 'work.html');
         } else if (href === '/projects/vertex') {
@@ -127,7 +129,7 @@
 
     // Determine current active page
     let activeKey = 'home';
-    if (path.includes('work')) {
+    if (path.includes('work') || path.includes('salary-sip')) {
       activeKey = 'work';
     } else if (path.includes('project') || path.includes('vertex')) {
       activeKey = 'projects';
