@@ -54,7 +54,7 @@
   <!-- Fonts and Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="/styles.css?v=9">
+  <link rel="stylesheet" href="/styles.css?v=10">
 </head>
 <body class="page-home">
 
@@ -120,40 +120,77 @@
         </div>
       </section>
 
-      <!-- MY APPROACH Section -->
+      <!-- MY APPROACH Section (Vertical Non-Card with Sketchy Shapes) -->
       <section class="approach-block" aria-labelledby="approach-heading">
         <p class="approach-label">MY APPROACH</p>
         <h2 id="approach-heading" class="approach-headline">What shapes the way I build.</h2>
 
-        <div class="approach-items-stack">
-          <!-- Pillar 01 -->
-          <article class="approach-card">
-            <span class="approach-number">01</span>
-            <div class="approach-body">
-              <h3 class="approach-title">Start with the problem.</h3>
-              <p class="approach-text">
+        <div class="approach-vertical-list">
+          <!-- Point 01 -->
+          <article class="approach-row">
+            <div class="approach-sketch-icon" aria-hidden="true" title="Start with the problem">
+              <!-- Hand-drawn inquiry target / focus lens sketch -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M24 5.5 C34.5 5, 42.5 13, 42 24 C41.5 34.5, 33.5 42.5, 23.5 42 C13 41.5, 5.5 33.5, 6 23.5 C6.5 13.5, 14 6, 24.5 5.5" />
+                <path d="M24 14.5 C29.5 14.2, 33.8 18.5, 33.5 24 C33.2 29.5, 28.8 33.8, 23.5 33.5 C18.2 33.2, 14.2 28.8, 14.5 23.5 C14.8 18.2, 18.5 14.5, 24 14.5" />
+                <circle cx="24" cy="24" r="2.2" fill="currentColor" />
+                <path d="M24 2 L24 7.5" />
+                <path d="M24 40.5 L24 46" />
+                <path d="M2 24 L7.5 24" />
+                <path d="M40.5 24 L46 24" />
+              </svg>
+            </div>
+
+            <div class="approach-details">
+              <div class="approach-header-line">
+                <span class="approach-num">01</span>
+                <h3 class="approach-title">Start with the problem.</h3>
+              </div>
+              <p class="approach-desc">
                 I believe good product decisions begin with understanding the people, needs, and problems behind them.
               </p>
             </div>
           </article>
 
-          <!-- Pillar 02 -->
-          <article class="approach-card">
-            <span class="approach-number">02</span>
-            <div class="approach-body">
-              <h3 class="approach-title">Bring clarity to complexity.</h3>
-              <p class="approach-text">
+          <!-- Point 02 -->
+          <article class="approach-row">
+            <div class="approach-sketch-icon" aria-hidden="true" title="Bring clarity to complexity">
+              <!-- Hand-drawn design squiggle: tangle resolving into straight arrow -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 27 C6.5 17, 12 15, 14.5 25 C16 33, 11.5 38.5, 8 33.5 C4.5 28.5, 8.5 20, 16 21 C22.5 22, 21 34.5, 16.5 35.5 C12.5 36.5, 12 28.5, 18 24.5 C23 20.5, 26.5 27, 29.5 24 C32 21.5, 35 23.5, 43 23.5" />
+                <path d="M38 18.5 L43.5 23.5 L38 28.5" />
+              </svg>
+            </div>
+
+            <div class="approach-details">
+              <div class="approach-header-line">
+                <span class="approach-num">02</span>
+                <h3 class="approach-title">Bring clarity to complexity.</h3>
+              </div>
+              <p class="approach-desc">
                 I enjoy connecting user needs, business goals, and technology to find the right direction.
               </p>
             </div>
           </article>
 
-          <!-- Pillar 03 -->
-          <article class="approach-card">
-            <span class="approach-number">03</span>
-            <div class="approach-body">
-              <h3 class="approach-title">Explore what's possible with AI.</h3>
-              <p class="approach-text">
+          <!-- Point 03 -->
+          <article class="approach-row">
+            <div class="approach-sketch-icon" aria-hidden="true" title="Explore what's possible with AI">
+              <!-- Hand-drawn playful sparkles / AI innovation stars -->
+              <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 5 C22.8 13.5, 25.5 17, 33.5 18.5 C25.5 20, 22.8 23.5, 22 32 C21.2 23.5, 18.5 20, 10.5 18.5 C18.5 17, 21.2 13.5, 22 5 Z" />
+                <path d="M36 28 C36.5 32.5, 38 34.5, 42 35.5 C38 36.5, 36.5 38.5, 36 43 C35.5 38.5, 34 36.5, 30 35.5 C34 34.5, 35.5 32.5, 36 28 Z" />
+                <path d="M8 35 L12 39" />
+                <path d="M12 35 L8 39" />
+              </svg>
+            </div>
+
+            <div class="approach-details">
+              <div class="approach-header-line">
+                <span class="approach-num">03</span>
+                <h3 class="approach-title">Explore what's possible with AI.</h3>
+              </div>
+              <p class="approach-desc">
                 I use AI to experiment with ideas, prototype concepts, and discover new ways to approach product building.
               </p>
             </div>
